@@ -181,7 +181,7 @@ def main():
         aqi,pm25,status = quality
 
     # Show the results, then save them to a file
-    print(f"{name}, {country}: {condition}, {temp} {symbol}, wind {wind} km/h")
+    print(f"{name}, {country}: {condition} , {temp} {symbol}, wind {wind} km/h")
     if aqi is not None:
         print(f"Air Quality: {status} (AQI: {aqi}, PM2.5: {pm25} μg/m³)")
     save_weather(name,country,temp,wind,time,condition,aqi,pm25,status)
